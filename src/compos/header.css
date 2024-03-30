@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Pacifico", cursive;
+  color: white;
+  margin-bottom: 30px;
+}
+.search-form {
+    width: 400px;
+  color: white;
+  font-weight: bolder;
+  display: flex;
+}
+.search input[type="text"] {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: 1px solid green;
+  font-weight: bolder;
+  border-radius: 2px;
+  width: 90%;
+  padding: 10px;
+}
+
+.search input[type="text"]:focus {
+  outline: 0;
+}
+
+button {
+  background-color: green;
+  border: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+}
+@media only screen and (max-width : 700px)
+{
+    .search-form
+    {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+}
+@media only screen and (max-width : 560px)
+{
+    .search-form
+    {
+        max-width: 400px;
+    }
+    .header{
+        justify-content: center;
+    }
+}
