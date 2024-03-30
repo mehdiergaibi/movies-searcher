@@ -5,7 +5,7 @@ const Card = ({ movies }) => {
 
         <div className="cardlist__movies">
             {
-                !movies ? <h1>not found</h1> : movies?.filter(movie => movie.Poster).map((movie, index) => (
+                !movies ? <h1>not found</h1> : movies?.map((movie, index) => (
                     <div className="card" key={index}>
                         <img
                             className="movie__image"

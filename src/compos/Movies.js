@@ -18,10 +18,15 @@ const Movies = () => {
         try {
             const response = await axios.get(apiURI);
             const data = response.data.Search
-            console.log(data);
+            //console.log(data);
+            
+            const filtedMovies = data.filter(movie => movie.Poster !== "N/A" );
+
+            console.log(data)
+            console.log(filtedMovies)
 
            //setState
-            setMovies(data);
+            setMovies(filtedMovies);
 
         } catch (err) {
             console.error(err);
